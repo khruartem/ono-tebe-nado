@@ -55,6 +55,7 @@
 }
 
 .header__logo {
+  display: block;
   justify-self: center;
   align-self: center;
   width: 129px;
