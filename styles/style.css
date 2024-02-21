@@ -9,7 +9,7 @@
   width: 100%;
 }
 
-.content-section_50_margins {
+.content-section_with_margins {
   width: 100%;
   max-width: 1000px;
   margin-right: 50px;
@@ -19,7 +19,6 @@
 .header {
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
-  height: 105px;
   margin-top: 92px;
 }
 
@@ -29,28 +28,28 @@
   margin-right: 36px;
 }
 
-.header__links-list {
+.header__link-list {
   display: flex;
   flex-direction: row;
   gap: 25px;
   width: 392px;
 }
 
-.header__links-list-item {
+.links-list-item {
   list-style-type: circle;
 }
 
-.header__links-list-item_no-bullit {
+.links-list-item_no-bullit {
   list-style-type: none;
 }
 
-.header__link {
+.link {
   color: #000000;
   font-weight: 400;
   font-size: 18px;
 }
 
-.header__link_active {
+.link_active {
   text-decoration: none;
 }
 
@@ -68,12 +67,20 @@
 }
 
 .address {
+  font-style: normal;
+}
+
+.address_header {
   justify-self: end;
   align-self: center;
   margin-right: 26px;
 }
 
-.header__address {
+.address_footer {
+  justify-self: start;
+}
+
+.address__link-list {
   display: flex;
   flex-direction: column;
   width: 241px;
@@ -81,9 +88,10 @@
 
 .cover {
   position: relative;
-  height: 757px;
+  min-height: 757px;
   margin-top: 96px;
   background-image: url(../images/cover.jpg);
+  background-position: center;
   background-size: cover;
 }
 
@@ -99,26 +107,27 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 165px 50px 135px;
+  padding: 150px 50px 134px;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 100px;
   text-transform: uppercase;
+  word-spacing: -21px;
 }
 
 .aligned-text {
   display: block;
-  line-height: 110%;
+  line-height: 114%;
 }
 
 .aligned-text_center {
   text-align: center;
-  line-height: 150%;
+  line-height: 160%;
 }
 
 .aligned-text_right {
   text-align: right;
-  line-height: 120%;
+  line-height: 91%;
 }
 
 .no-letter-spacing {
@@ -126,7 +135,11 @@
 }
 
 .letter-spacing-extended {
-  letter-spacing: 0.3em;
+  letter-spacing: 30px;
+}
+
+.letter-spacing-extended_x2 {
+  letter-spacing: 60px;
 }
 
 .cover__description {
@@ -143,7 +156,7 @@
 
 .cover__description-text {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   width: 637px;
   color: #FFFFFF;
   font-weight: 400;
@@ -155,17 +168,17 @@
 .bet-button {
   width: 256px;
   height: 51px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid currentColor;
   color: #FFFFFF;
   font-weight: 500;
   font-size: 22px;
+  line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   background-color: rgb(0 0 0 / 0);
 }
 
 .lots {
-  min-height: 692px;
   margin-top: 175px;
 }
 
@@ -206,23 +219,21 @@
   justify-content: space-between;
   height: 100%;
   padding: 51px 40px 48px;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
   background-position: center;
-  background-size:cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
   background-position: center;
-  background-size: cover;
 }
 
 .card__title {
@@ -254,14 +265,12 @@
 }
 
 .about {
-  height: 595px;
   margin-top: 146px;
 }
 
 .about__column {
   display: grid;
   grid-template-columns: 334px 1fr;
-  grid-template-rows: 275px 320px;
 }
 
 .about__logo {
@@ -295,22 +304,24 @@
   flex-direction: column;
   grid-column-start: 2;
   gap: 24px;
-  margin-left: 25px;
+  margin-left: 24px;
+  margin-top: 3.2px;
   color: #000000;
   font-weight: 400;
   font-size: 20px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.05px;
+  line-height: 24px;
+  word-spacing: 0.01px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  min-height: 98px;
   margin-top: 180px;
   margin-bottom: 88px;
 }
 
-.address_start_aligned {
+.address_footer {
   justify-self: start;
 }
 
@@ -319,24 +330,10 @@
   align-self: start;
 }
 
-.footer__menu-list {
+.footer__link-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.footer__menu-list-item {
-  list-style-type: none;
-}
-
-.footer__menu-link {
-  color: #000000;
-  font-weight: 400;
-  font-size: 18px;
-}
-
-.footer__menu-link_active {
-  text-decoration: none;
 }
 
 .footer__social-list {
