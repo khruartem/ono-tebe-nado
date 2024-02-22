@@ -23,16 +23,14 @@
 }
 
 .header__menu {
-  justify-self: end;
-  align-self: center;
-  margin-right: 36px;
+  place-self: start;
+  margin: 39px 0 0 27px;
 }
 
 .header__link-list {
   display: flex;
   flex-direction: row;
-  gap: 25px;
-  width: 392px;
+  gap: 28px;
 }
 
 .links-list-item {
@@ -47,6 +45,13 @@
   color: #000000;
   font-weight: 400;
   font-size: 18px;
+  line-height: 21.13px;
+  letter-spacing: 0.01em;
+}
+
+.link_address {
+  line-height: 24px;
+  letter-spacing: 0.01em;
 }
 
 .link_active {
@@ -71,9 +76,9 @@
 }
 
 .address_header {
-  justify-self: end;
-  align-self: center;
-  margin-right: 26px;
+  place-self: end;
+  margin: 0 25px 2px 0;
+  padding-bottom: 5px;
 }
 
 .address_footer {
@@ -89,7 +94,7 @@
 .cover {
   position: relative;
   min-height: 757px;
-  margin-top: 96px;
+  margin-top: 91px;
   background-image: url(../images/cover.jpg);
   background-position: center;
   background-size: cover;
@@ -107,38 +112,44 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 150px 50px 134px;
+  padding: 165px 50px 135px;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 100px;
   text-transform: uppercase;
-  word-spacing: -21px;
 }
 
 .aligned-text {
   display: block;
-  line-height: 114%;
+  line-height: 115px;
+  margin-top: 20px;
+}
+
+.aligned-text:first-child {
+  margin-top: 0;
 }
 
 .aligned-text_center {
   text-align: center;
-  line-height: 160%;
 }
 
 .aligned-text_right {
   text-align: right;
-  line-height: 91%;
+}
+
+.aligned-text_line-height_decreased {
+  line-height: 100px;
 }
 
 .no-letter-spacing {
   letter-spacing: 0;
 }
 
-.letter-spacing-extended {
+.letter-spacing {
   letter-spacing: 30px;
 }
 
-.letter-spacing-extended_x2 {
+.letter-spacing-extended {
   letter-spacing: 60px;
 }
 
@@ -176,6 +187,7 @@
   text-align: center;
   text-transform: uppercase;
   background-color: rgb(0 0 0 / 0);
+  font-family: Raleway, sans-serif;
 }
 
 .lots {
@@ -220,11 +232,11 @@
   height: 100%;
   padding: 51px 40px 48px;
   background-size: cover;
+  background-position: center;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
 }
 
 .card_type_book {
@@ -233,7 +245,6 @@
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
 }
 
 .card__title {
@@ -265,7 +276,7 @@
 }
 
 .about {
-  margin-top: 146px;
+  margin-top: 151px;
 }
 
 .about__column {
@@ -322,7 +333,9 @@
 }
 
 .address_footer {
-  justify-self: start;
+  place-self: start;
+  margin-top: 5px;
+  padding-bottom: 10px;
 }
 
 .footer__menu {
